@@ -466,6 +466,11 @@ section-title - універсальний клас для h2 */
   color: #ffffff;
 }
 
+.project-set-item:hover .project-thumb-label {
+  opacity: 1;
+  transition: 250ms opacity linear;
+}
+
 .project-link {
   display: block;
   text-decoration: none;
