@@ -264,6 +264,28 @@ section-title - універсальний клас для h2 */
   margin-right: 30px;
 }
 
+/* Лейбел до карток */
+.thumb-example {
+  position: relative;
+}
+
+.label-text-example {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+}
+
+.thumb-example .features-title {
+  color: var(--primary-bg-color);
+  margin: 0;
+  text-align: center;
+}
 .team {
   background-color: var(--secondary-bg-color);
 }
