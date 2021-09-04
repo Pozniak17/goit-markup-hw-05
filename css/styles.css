@@ -76,7 +76,9 @@ img {
   padding-top: 25px;
   padding-bottom: 24px;
   margin-right: 93px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   color: #000000;
   text-decoration: none;
@@ -88,7 +90,7 @@ img {
 
 .header-logo:hover,
 .header-logo:focus {
-  color: var(--accent);
+  color: darkorchid;
 }
 
 .accent {
@@ -106,6 +108,10 @@ img {
 }
 
 .site-nav-link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   position: relative;
   display: block;
   padding-top: 32px;
@@ -151,6 +157,10 @@ img {
 }
 
 .contact-link {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -188,6 +198,9 @@ img {
 }
 
 .hero-button {
+  transition-property: background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   color: var(--primary-bg-color);
   background-color: var(--accent);
   cursor: pointer;
@@ -356,6 +369,9 @@ section-title - універсальний клас для h2 */
 
 .socials-link {
   fill: #afb1b8;
+  transition-property: background-color, fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .socials-link:hover,
@@ -373,6 +389,10 @@ section-title - універсальний клас для h2 */
 
 /* Футер */
 .footer-logo {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   color: var(--primary-bg-color);
   font-family: Raleway;
   font-weight: 700;
@@ -412,6 +432,10 @@ section-title - універсальний клас для h2 */
 }
 
 .filters-button {
+  transition-property: color, background-color, box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   display: block;
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
@@ -469,8 +493,11 @@ section-title - універсальний клас для h2 */
   height: 100%;
   padding: 63px 24px;
 
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
   transform: translateY(100%);
-  transition: transform 500ms linear;
   overflow: hidden;
 
   font-style: normal;
@@ -486,7 +513,9 @@ section-title - універсальний клас для h2 */
 .project-link {
   display: block;
   text-decoration: none;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-link:hover,
@@ -543,6 +572,10 @@ section-title - універсальний клас для h2 */
   font-size: 14px;
   line-height: 1.71;
   display: block;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-address:hover,
 .footer-address:focus {
@@ -555,6 +588,10 @@ section-title - універсальний клас для h2 */
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-link:hover,
@@ -623,6 +660,10 @@ section-title - універсальний клас для h2 */
   fill: #afb1b8;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .clients-link:hover .clients-icon,
@@ -670,6 +711,9 @@ section-title - універсальний клас для h2 */
   justify-content: center;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.1);
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .second-footer-item:hover,
@@ -695,8 +739,8 @@ section-title - універсальний клас для h2 */
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   background: rgba(0, 0, 0, 0.2);
 }
